@@ -152,7 +152,7 @@ const Terms: React.FC = () => {
           </p>
           <p className='text-sm pb-2'>
             <span className='font-medium pr-2'>3.7</span> I ____________ have
-            decided to pay off for Jess' withdrawal fee alongside mine.
+            decided to pay off for Jess&apos; withdrawal fee alongside mine.
             (signature) ______________
           </p>
         </div>
