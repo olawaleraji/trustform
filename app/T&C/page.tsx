@@ -3,6 +3,7 @@ import Footer from '../Footer'
 import Terms from './Terms&C'
 import Header from '../LandingPage/Header'
 import Form from './Form'
+import FileUpload from './FileUpload'
 
 type Props = {}
 
@@ -12,6 +13,7 @@ const page = (props: Props) => {
       <Header />
       <Form />
       <Terms />
+      <FileUpload />
       <Footer />
     </div>
   )
