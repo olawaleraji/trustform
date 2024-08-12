@@ -1,10 +1,12 @@
 'use client'
 
-import React from 'react'
+import React, { useState } from 'react'
 import jsPDF from 'jspdf'
 import 'jspdf-autotable'
 
 const Terms: React.FC = () => {
+  const [date, setDate] = useState('')
+
   const generatePDF = () => {
     const doc = new jsPDF()
     const pageWidth = doc.internal.pageSize.getWidth()
@@ -13,6 +15,12 @@ const Terms: React.FC = () => {
 
     doc.setFontSize(14)
     doc.text('Terms and Conditions', margin, 20, { align: 'left' })
+
+    // Add the date to the PDF with an underline space on the right side
+    doc.setFontSize(12)
+    const dateX = pageWidth - margin - 60
+    doc.text('Date:', dateX, 20, { align: 'left' })
+    doc.line(dateX + 15, 20, pageWidth - margin, 20) // Underline for date input
 
     const content = [
       {
@@ -89,6 +97,19 @@ const Terms: React.FC = () => {
         Terms and Conditions
         <div className='absolute -top-4 -left-4 w-12 h-12 bg-blue-100 rounded-full -z-10'></div>
       </h1>
+
+      <div className='flex justify-end mb-6'>
+        <label className='text-gray-600 text-sm font-medium'>
+          Date:{' '}
+          <input
+            type='text'
+            value={date}
+            onChange={e => setDate(e.target.value)}
+            className='border border-gray-300 rounded p-1'
+            placeholder='DD/MM/YYYY'
+          />
+        </label>
+      </div>
 
       <div id='terms-content' className='space-y-6 text-gray-600'>
         <div>
@@ -184,11 +205,12 @@ const Terms: React.FC = () => {
           </div>
         </div>
       </div>
+
       <button
         onClick={generatePDF}
-        className='mt-6 px-4 py-2 bg-blue-500 text-white rounded'
+        className='mt-8 px-6 py-3 bg-blue-600 text-white font-semibold rounded-lg shadow-md hover:bg-blue-500 transition duration-300 ease-in-out'
       >
-        Download as PDF
+        Download PDF
       </button>
     </div>
   )
