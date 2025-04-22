@@ -43,7 +43,7 @@ const Terms: React.FC = () => {
           '3.2 Both parties acknowledge that they have read, understood, and agreed to the terms and conditions outlined in the SCHOOL OF KINKS before becoming own to each other.',
           '3.3 All outstanding fees must be cleared.',
           '3.4 The law enforcement agency will charge you based on everything that will be required.',
-          '3.5 YOUR ENROLMENT TERMINATION will cost you $2500,this fee does not partake to any fees you have paid in the past.',
+          '3.5 YOUR ENROLMENT TERMINATION will cost you $2500, this fee does not partake to any fees you have paid in the past.',
           '3.6 The Dominant has no right to request for any fees or what so ever after concluding the signing of these forms.',
           "3.7 I ____________ have decided to pay off for withdrawal fee alongside mine. (signature) ______________"
         ]
@@ -162,7 +162,7 @@ const Terms: React.FC = () => {
             agency will charge you based on everything that will be required.
           </p>
           <p className='text-sm pb-2'>
-            <span className='font-medium pr-2'>3.5</span> YOUR ENROLMENT TERMINATION will cost you $2500,this fee does not partake to any fees you have paid in the past.
+            <span className='font-medium pr-2'>3.5</span> YOUR ENROLMENT TERMINATION will cost you $2500, this fee does not partake to any fees you have paid in the past.
           </p>
           <p className='text-sm pb-2'>
             <span className='font-medium pr-2'>3.6</span> The Dominant has no
