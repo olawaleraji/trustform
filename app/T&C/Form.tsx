@@ -7,7 +7,7 @@ const Form = (props: Props) => {
     <div className='bg-white py-6 sm:py-8 lg:py-12'>
       <div className='mx-auto max-w-screen-lg px-4 md:px-8'>
         <h1 className='mb-4 text-center lg:text-2xl text-lg font-bold text-gray-800 sm:text-3xl md:mb-6'>
-          RAVEN AND JESS WITHDRAWAL FORM
+          WITHDRAWAL FORM
         </h1>
 
         <p className='mb-6 text-gray-500 sm:text-lg md:mb-8'>
