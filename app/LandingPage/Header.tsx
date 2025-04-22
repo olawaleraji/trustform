@@ -12,15 +12,7 @@ const Header = (props: Props) => {
   return (
     <header className='bg-gray-900'>
       <nav className='items-center pt-5 px-4 mx-auto max-w-screen-xl sm:px-8 sm:flex sm:space-x-6'>
-        <Link href='T&C' className='pb-4'>
-          <img
-            src='https://media.istockphoto.com/id/547202368/photo/checklist-icon-blue-glossy-round-button.webp?b=1&s=170667a&w=0&k=20&c=VX5M52clWEYTq_0i13kujZeeoDKIFv_LE72_tPk_L8E='
-            width={40}
-            height={10}
-            className='rounded-md'
-            alt='logo'
-          />
-        </Link>
+  
         <ul className='py-4 flex-1 items-center flex space-x-3 sm:space-x-6 sm:justify-end'>
           {navigation.map((item, idx) => (
             <li className='text-gray-200' key={idx}>
