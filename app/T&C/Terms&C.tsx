@@ -162,9 +162,7 @@ const Terms: React.FC = () => {
             agency will charge you based on everything that will be required.
           </p>
           <p className='text-sm pb-2'>
-            <span className='font-medium pr-2'>3.5</span> Your Enrolment ID CARD
-            termination will cost you $2500, this fee does not partake to any
-            fees you have paid in the past.
+            <span className='font-medium pr-2'>3.5</span> YOUR ENROLMENT TERMINATION will cost you $2500,this fee does not partake to any fees you have paid in the past.
           </p>
           <p className='text-sm pb-2'>
             <span className='font-medium pr-2'>3.6</span> The Dominant has no
@@ -173,7 +171,7 @@ const Terms: React.FC = () => {
           </p>
           <p className='text-sm pb-2'>
             <span className='font-medium pr-2'>3.7</span> I ____________ have
-            decided to pay off for Jess&apos; withdrawal fee alongside mine.
+            decided to pay off for withdrawal fee alongside mine.
             (signature) ______________
           </p>
         </div>
